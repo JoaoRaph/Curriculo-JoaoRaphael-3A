@@ -85,6 +85,10 @@ body {
     opacity: 0.8;
 }
 
+main {
+    padding: 0 25px;
+}
+
 h2 {
     color: #006d77;
     border-left: 5px solid #83c5be;
@@ -93,22 +97,34 @@ h2 {
     font-size: 1.4em;
 }
 
+h3 {
+    margin-top: 15px;
+    color: #444;
+}
+
 p, li {
     font-size: 1em;
     color: #333;
-    margin: 5px 0;
-    padding: 0 20px;
+    margin: 6px 0;
 }
 
 ul {
     list-style: none;
-    padding-left: 20px;
+    margin: 8px 0;
+    padding-left: 0;
+}
+
+ul ul {
+    margin-top: 6px;
+    padding-left: 18px;
 }
 
 ul li::before {
-    content: "• ";
+    content: "•";
     color: #006d77;
     font-weight: bold;
+    display: inline-block;
+    width: 16px;
 }
 
 [data-share-badge-id] {
